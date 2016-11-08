@@ -8,7 +8,7 @@
         <service id="psi_grid.view_registry" class="Psi\Component\View\TypeRegistry" />
 
         <service id="psi_grid.view_factory" class="Psi\Component\View\ViewFactory">
-            <argument type="service" id="psi_grid.cell.registry" />
+            <argument type="service" id="psi_grid.view_registry" />
         </service>
 
         <service id="psi_grid.view.property" class="Psi\Component\Grid\Cell\PropertyType" />

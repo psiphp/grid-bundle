@@ -9,7 +9,7 @@
             <argument type="service" id="psi_object_agent.agent_finder" />
             <argument type="service" id="psi_grid.metadata.factory" />
             <argument type="service" id="psi_grid.view_factory" />
-            <argument type="service" id="psi_grid.filter_factory" />
+            <argument type="service" id="psi_grid.filter_form_factory" />
         </service>
 
     </services>

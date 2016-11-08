@@ -11,8 +11,8 @@ class AppKernel extends Kernel
     {
         $bundles = [
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new \Psi\Bundle\ObjectRender\PsiObjectRenderBundle(),
             new \Psi\Bundle\Grid\PsiGridBundle(),
+            new \Psi\Bundle\ObjectAgent\PsiObjectAgentBundle(),
         ];
 
         return $bundles;

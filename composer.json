@@ -12,7 +12,7 @@
     "require": {
         "symfony/framework-bundle": "^3.0",
         "twig/twig": "^1.0",
-        "psiphp/grid": "^1.0@dev"
+        "psiphp/grid": "dev-filters"
     },
     "require-dev": {
         "symfony/console": "^3.0",
@@ -20,7 +20,8 @@
         "symfony/process": "^3.0",
         "phpunit/phpunit": "@stable",
         "symfony/translation": "^3.1",
-        "symfony/validator": "^3.1"
+        "symfony/validator": "^3.1",
+        "psiphp/object-agent-bundle": "^1.0@dev"
     },
     "autoload": {
         "psr-4": {
