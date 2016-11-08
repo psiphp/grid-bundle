@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="psi_grid.metadata.annotation_reader" class="Doctrine\Common\Annotations\AnnotationReader" />
+
+        <service id="psi_grid.metadata.driver.annotation" class="Psi\Component\Grid\Metadata\Driver\AnnotationDriver">
+            <argument type="service" id="psi_grid.metadata.annotation_reader" />
+        </service>
+
+        <service id="psi_grid.metadata.driver.chain" class="Metadata\Driver\DriverChain">
+            <argument type="collection">
+                <argument type="service" id="psi_grid.metadata.driver.annotation" />
+            </argument>
+        </service>
+
+        <service id="psi_grid.metadata.factory" class="Metadata\MetadataFactory">
+            <argument type="service" id="psi_grid.metadata.driver.chain" />
+        </service>
+    </services>
+</container>
+
