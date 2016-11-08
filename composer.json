@@ -1,6 +1,6 @@
 {
     "name": "psiphp/grid-bundle",
-    "description": "Locate and render Twig templates based on object FQCNs",
+    "description": "Symfony bundle integrating the Psi Grid component",
     "license": "MIT",
     "minimum-stability": "dev",
     "authors": [
@@ -12,7 +12,6 @@
     "require": {
         "symfony/framework-bundle": "^3.0",
         "twig/twig": "^1.0",
-        "psiphp/object-render-bundle": "^1.0@dev",
         "psiphp/grid": "^1.0@dev"
     },
     "require-dev": {
