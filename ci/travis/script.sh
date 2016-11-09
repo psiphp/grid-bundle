@@ -1,1 +1,1 @@
- phpunit
+./example/bin/console 
