@@ -20,5 +20,6 @@ class PsiGridExtension extends Extension
         $loader->load('metadata.xml');
         $loader->load('cell.xml');
         $loader->load('action.xml');
+        $loader->load('form.xml');
     }
 }

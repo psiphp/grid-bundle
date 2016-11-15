@@ -2,11 +2,11 @@
 
 namespace Psi\Bundle\Grid;
 
-use Psi\Bundle\Grid\DependencyInjection\Compiler\FilterPass;
+use Psi\Bundle\Grid\DependencyInjection\Compiler\ActionPass;
 use Psi\Bundle\Grid\DependencyInjection\Compiler\CellPass;
+use Psi\Bundle\Grid\DependencyInjection\Compiler\FilterPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Psi\Bundle\Grid\DependencyInjection\Compiler\ActionPass;
 
 class PsiGridBundle extends Bundle
 {
