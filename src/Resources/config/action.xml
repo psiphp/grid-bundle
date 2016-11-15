@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="psi_grid.action_performer" class="Psi\Component\Grid\ActionPerformer" public="false">
+            <argument type="service" id="psi_grid.action_registry" />
+        </service>
+
+        <service id="psi_grid.action_registry" class="Psi\Component\Grid\ActionRegistry" public="false" />
+
+        <!-- Actions -->
+        <service id="psi_grid.action.delete" class="Psi\Component\Grid\Action\DeleteAction" public="false">
+            <tag name="psi_grid.action" alias="delete" />
+        </service>
+
+    </services>
+</container>
+
+
+

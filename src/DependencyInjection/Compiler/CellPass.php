@@ -2,13 +2,13 @@
 
 namespace Psi\Bundle\Grid\DependencyInjection\Compiler;
 
-class ViewPass extends AbstractRegistryPass
+class CellPass extends AbstractRegistryPass
 {
     public function __construct()
     {
         parent::__construct(
-            'psi_grid.view_registry',
-            'psi_grid.view'
+            'psi_grid.cell_registry',
+            'psi_grid.cell'
         );
     }
 }
