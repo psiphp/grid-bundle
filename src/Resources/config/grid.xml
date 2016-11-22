@@ -5,11 +5,16 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="psi_grid.grid_view_factory" class="Psi\Component\Grid\GridViewFactory" public="false">
+            <argument type="service" id="psi_grid.cell_factory" />
+            <argument type="service" id="psi_grid.filter_bar_factory" />
+        </service>
+
         <service id="psi_grid.grid_factory" class="Psi\Component\Grid\GridFactory">
             <argument type="service" id="psi_object_agent.agent_finder" />
             <argument type="service" id="psi_grid.metadata.factory" />
-            <argument type="service" id="psi_grid.view_factory" />
-            <argument type="service" id="psi_grid.filter_form_factory" />
+            <argument type="service" id="psi_grid.grid_view_factory" />
+            <argument type="service" id="psi_grid.action_performer" />
         </service>
 
     </services>

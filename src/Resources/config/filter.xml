@@ -5,23 +5,23 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="psi_grid.filter_registry" class="Psi\Component\Grid\FilterRegistry" />
+        <service id="psi_grid.filter_registry" class="Psi\Component\Grid\FilterRegistry" public="false"/>
 
-        <service id="psi_grid.filter_form_factory" class="Psi\Component\Grid\FilterFormFactory">
+        <service id="psi_grid.filter_bar_factory" class="Psi\Component\Grid\FilterBarFactory" public="false">
             <argument type="service" id="form.factory" />
             <argument type="service" id="psi_grid.filter_registry" />
         </service>
 
         <!-- Filters -->
-        <service id="psi_grid.filter.string" class="Psi\Component\Grid\Filter\StringFilter">
+        <service id="psi_grid.filter.string" class="Psi\Component\Grid\Filter\StringFilter" public="false">
             <tag name="psi_grid.filter" alias="string" />
         </service>
 
-        <service id="psi_grid.filter.number" class="Psi\Component\Grid\Filter\NumberFilter">
+        <service id="psi_grid.filter.number" class="Psi\Component\Grid\Filter\NumberFilter" public="false">
             <tag name="psi_grid.filter" alias="number" />
         </service>
 
-        <service id="psi_grid.filter.boolean" class="Psi\Component\Grid\Filter\BooleanFilter">
+        <service id="psi_grid.filter.boolean" class="Psi\Component\Grid\Filter\BooleanFilter" public="false">
             <tag name="psi_grid.filter" alias="boolean" />
         </service>
 
