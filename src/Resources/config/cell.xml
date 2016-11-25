@@ -5,20 +5,20 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="psi_grid.cell_registry" class="Psi\Component\Grid\CellRegistry" public="false" />
+        <service id="psi_grid.column_registry" class="Psi\Component\Grid\ColumnRegistry" public="false" />
 
-        <service id="psi_grid.cell_factory" class="Psi\Component\Grid\CellFactory" public="false" >
-            <argument type="service" id="psi_grid.cell_registry" />
+        <service id="psi_grid.column_factory" class="Psi\Component\Grid\ColumnFactory" public="false" >
+            <argument type="service" id="psi_grid.column_registry" />
         </service>
 
-        <!-- Cells -->
-        <service id="psi_grid.view.property" class="Psi\Component\Grid\Cell\PropertyCell" public="false">
-            <tag name="psi_grid.cell" alias="property" />
+        <!-- Columns -->
+        <service id="psi_grid.view.property" class="Psi\Component\Grid\Column\PropertyColumn" public="false">
+            <tag name="psi_grid.column" alias="property" />
         </service>
 
-        <service id="psi_grid.view.select" class="Psi\Component\Grid\Cell\SelectCell" public="false">
+        <service id="psi_grid.view.select" class="Psi\Component\Grid\Column\SelectColumn" public="false">
             <argument type="service" id="psi_object_agent.agent_finder" />
-            <tag name="psi_grid.cell" alias="select" />
+            <tag name="psi_grid.column" alias="select" />
         </service>
 
     </services>
