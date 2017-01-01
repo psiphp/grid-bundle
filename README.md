@@ -13,9 +13,10 @@ This component is part of the Psi Content Management Framework
 
 Symfony Bundle for integrating the Psi [Grid](https://github.com/psiphp/grid) component.
 
+
 ## Documentation
 
-See the documentation in [doc/index.rst](https://github.com/psiphp/grid-bundle/blob/master/docs/index.rst).
+Documentation is in progress, there may be documentation in [doc/index.rst](https://github.com/psiphp/grid-bundle/blob/master/docs/index.rst).
 
 ## Installation
 
