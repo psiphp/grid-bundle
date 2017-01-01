@@ -15,8 +15,7 @@ Symfony Bundle for integrating the Psi [Grid](https://github.com/psiphp/grid) co
 
 ## Documentation
 
-You can find out more about this component and others
-[here](https://psiphp.readthedocs.io/en/latest/components/grid-bundle/docs/index.html).
+See the documentation in [doc/index.rst](https://github.com/psiphp/grid-bundle/blob/master/docs/index.rst).
 
 ## Installation
 
